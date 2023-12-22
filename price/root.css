@@ -1,0 +1,10 @@
+:root {
+    --vt-th-grey: rgba(84, 96, 122, 0.68);
+    --os-background:#202125;
+    --white-background:#fff;
+    --hover-background:#F9F8FD;
+    --blue-os:rgba(0, 119, 255, 1);
+    --rub-background:rgba(0, 0, 0, 0.03);
+    --bx-shd-invido: 0px 4px 12px 0px rgba(13, 35, 67, 0.08);
+    --bx-shd-menu:  0px 0px 14px 0px rgba(0, 0, 0, 0.20);
+}
