@@ -1737,7 +1737,7 @@ input[type=radio]:checked:before {
         gap: 0
     }
     .container-price {
-        height: 1vh;
+        height: 75vh;
         padding-top: 0;
     }
     .burger-price {
