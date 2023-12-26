@@ -13,23 +13,30 @@
           <div class="container_all-top-left">
             <img src="../img/CPlace.svg" alt="" />
             <h2 class="container_all-top-left-title">CPlace</h2>
+            <h2 class="container_all-top-rigth-title-block">Вход CPlace</h2>
           </div>
           <div class="container_all-top-rigth">
-            <h2 class="container_all-top-rigth-title">Войти</h2>
-            <p class="container_all-top-rigth-text">Панель управления CPlace</p>
+            <h2 class="container_all-top-rigth-title">Вход CPlace</h2>
             <form action="" class="form-1">
               <div class="form-1-all">
                 <p class="form-1-all-text">E-mail</p>
-                <img src="../img/User 1.svg" alt="" class="form-1-all-img" />
+                <!-- <img src="../img/User 1.svg" alt="" class="form-1-all-img" /> -->
                 <input
                   type="email"
                   class="form-1-all-inp"
                   placeholder="Адрес электронной почты"
                   maxlength="26"
                 />
+                <span class="eror-span"
+                  >Не верный адрес электронной почты.</span
+                >
+                <button class="btn-help">Получить помощь при входе</button>
+                <img src="../img/Warning.svg" alt="" class="warning" />
               </div>
 
-              <button type="submit" class="form-1-btn">Продолжить</button>
+              <button disabled type="submit" class="form-1-btn">
+                Продолжить
+              </button>
             </form>
           </div>
           <div class="container_all-top-rigth-two forma-none">
@@ -47,28 +54,33 @@
               </div>
               <div class="person_rigth">
                 <p class="person_rigth-email">artem.soitu@gmail.com</p>
-                <span class="person_rigth-span"> управляющий </span>
+                <span class="person_rigth-span"> Артём Сойту </span>
               </div>
             </div>
             <form action="" class="form-1">
               <div class="form-1-all">
                 <p class="form-1-all-text">Пароль</p>
-                <img
+                <!-- <img
                   src="../img/lock_close 1.svg"
                   alt=""
                   class="form-1-all-img"
-                />
+                /> -->
                 <input
                   type="password"
                   class="form-2-all-inp"
-                  placeholder="Введите свой пароль"
+                  placeholder="Введите пароль"
                   maxlength="26"
                 />
+                <img src="../img/Warning.svg" alt="" class="warning-2" />
+                <span class="eror-span-2">Не верный пароль.</span>
+                <button type="submit" class="form-2-btn-password">
+                  Сбросить пароль
+                </button>
+                <button class="btn-help-2">Получить помощь при входе</button>
               </div>
 
-              <a href="/index.html" class="form-2-btn-link">Продолжить</a>
-              <button type="submit" class="form-2-btn-password">
-                Забыли пароль?
+              <button disabled>
+                <a href="/index.html" class="form-2-btn-link">Продолжить</a>
               </button>
             </form>
           </div>
@@ -78,28 +90,30 @@
               Восстановить <br />
               пароль
             </h2>
-            <form action="" class="form-1">
+            <form action="" class="form-1 form11">
               <div class="form-1-all">
                 <p class="form-1-all-text">E-mail</p>
-                <img src="../img/User 1.svg" alt="" class="form-1-all-img" />
+                <img src="../img/Warning.svg" alt="" class="warning-3" />
                 <input
                   type="email"
                   class="form-3-all-inp"
                   placeholder="Адрес электронной почты"
                   maxlength="26"
                 />
+                <span class="eror-span-3"
+                  >Не верный адрес электронной почты.</span
+                >
               </div>
 
-              <a href="#" class="form-3-btn-link">Продолжить</a>
+              <button disabled>
+                <a href="#" class="form-3-btn-link">Продолжить</a>
+              </button>
               <button type="submit" class="form-3-btn-password">Войти</button>
             </form>
           </div>
           <div class="container_all-top-rigth-four forma-none">
             <span class="container_all-top-rigth-three-span">Шаг 2 из 2</span>
             <h2 class="container_all-top-rigth-title four">Введите код</h2>
-            <p class="container_all-top-rigth-text">
-              Мы выслали код на вашу почту
-            </p>
             <form action="" class="form-1">
               <div class="kod">
                 <input type="text" maxlength="1" class="input-form-4" />
@@ -114,7 +128,9 @@
                 />
               </div>
 
-              <a href="/index.html" class="form-4-btn-link">Восстановить</a>
+              <button disabled>
+                <a href="/index.html" class="form-4-btn-link">Восстановить</a>
+              </button>
               <button type="submit" class="form-4-btn-password">Войти</button>
             </form>
           </div>
