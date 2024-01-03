@@ -179,7 +179,7 @@ btn4.onclick = function () {
       btn4.href = "#";
       inp.classList.add("eror-red");
     } else {
-      btn4.href = "/index.html";
+      btn4.href = "../index.html";
       inp.classList.remove("eror-red");
       inp.classList.add("mh");
     }

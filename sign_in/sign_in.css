@@ -506,6 +506,7 @@ button:disabled {
 }
 
 .ma {
+    border-top: none;
     border-bottom: 1px solid #07F;
 }
 
@@ -711,8 +712,8 @@ button:disabled {
     }
 }
 .mh {
-    border: 1px solid #07F!important;
+    border-bottom: 1px solid #07F!important;
 }
 .eror-red {
-    border: 1px solid red!important;
+    border-bottom: 1px solid red!important;
 }
