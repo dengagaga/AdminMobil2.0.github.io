@@ -35,11 +35,11 @@ menuItems.forEach((item) => {
       });
       cash.classList.remove("cash--active");
       vectorHome.classList.remove("vector-home-white");
-      menuRigth.style.display = "";
+      // menuRigth.style.display = "";
 
       brMenu.classList.toggle("br-menu--active");
 
-      menuRigth.classList.toggle("menu-rigth--active");
+      // menuRigth.classList.toggle("menu-rigth--active");
       menuTextNone.forEach((text) => {
         text.classList.toggle("text-none");
       });
@@ -51,22 +51,6 @@ menuItems.forEach((item) => {
       vectorHome.classList.add("vector-home-white");
     }
   });
-});
-
-Svernyt.addEventListener("click", () => {
-  menuRightLinks.forEach((link) => {
-    link.classList.remove("menu-right-link--active");
-  });
-  menuTextNone.forEach((text) => {
-    text.classList.add("text-none");
-  });
-  menuRigth.classList.add("menu-rigth-none");
-  dash.classList.remove("dash--active");
-  vector.forEach((v) => {
-    v.classList.remove("vector-white");
-  });
-
-  brMenu.classList.remove("br-menu--active");
 });
 
 const brMenu = document.querySelector(".br-menu");
@@ -85,10 +69,10 @@ cp.addEventListener("click", () => {
   vector2.forEach((v2) => {
     v2.classList.remove("vector-2--active");
   });
-  menuRigth.classList.remove("menu-rigth-none");
-  menuRigth.classList.remove("menu-rigth--active");
+  // menuRigth.classList.remove("menu-rigth-none");
+  // menuRigth.classList.remove("menu-rigth--active");
   dash.classList.remove("dash--active");
-  menuRigth.style.display = "";
+  // menuRigth.style.display = "";
 });
 cash.addEventListener("click", () => {
   brMenu.classList.add("br-menu--active");
@@ -104,10 +88,10 @@ cash.addEventListener("click", () => {
   vector2.forEach((v2) => {
     v2.classList.remove("vector-2--active");
   });
-  menuRigth.classList.remove("menu-rigth-none");
-  menuRigth.classList.remove("menu-rigth--active");
+  // menuRigth.classList.remove("menu-rigth-none");
+  // menuRigth.classList.remove("menu-rigth--active");
   dash.classList.remove("dash--active");
-  menuRigth.style.display = "";
+  // menuRigth.style.display = "";
 });
 function izi(item) {
   item.innerHTML += ` <tr class="tr-one-bot tr-one-bot-all tr-one-bot--active">
@@ -145,28 +129,30 @@ const faceBtnThree = face.querySelector(".all-item-table-bot-btn-three");
 const facetbodyOne = face.querySelector(".tbody-one");
 let counter2 = 0;
 const bodys = document.querySelector(".bodys");
-const bodysSpan1 = bodys.querySelector(".span-all-hidden");
-const bodysSpan2 = bodys.querySelector(".span-vb");
-const bodysBtnOne = bodys.querySelector(".all-item-table-bot-btn-one");
-const bodysBtnTwo = bodys.querySelector(".all-item-table-bot-btn-two");
-const bodysBtnThree = bodys.querySelector(".all-item-table-bot-btn-three");
-const bodystbodyOne = bodys.querySelector(".tbody-one");
+// const bodysSpan1 = bodys.querySelector(".span-all-hidden");
+// const bodysSpan2 = bodys.querySelector(".span-vb");
+// const bodysBtnOne = bodys.querySelector(".all-item-table-bot-btn-one");
+// const bodysBtnTwo = bodys.querySelector(".all-item-table-bot-btn-two");
+// const bodysBtnThree = bodys.querySelector(".all-item-table-bot-btn-three");
+// const bodystbodyOne = bodys.querySelector(".tbody-one");
 let counter3 = 0;
 const hands = document.querySelector(".hands");
-const handsSpan1 = hands.querySelector(".span-all-hidden");
-const handsSpan2 = hands.querySelector(".span-vb");
-const handsBtnOne = hands.querySelector(".all-item-table-bot-btn-one");
-const handsBtnTwo = hands.querySelector(".all-item-table-bot-btn-two");
-const handsBtnThree = hands.querySelector(".all-item-table-bot-btn-three");
-const handstbodyOne = hands.querySelector(".tbody-one");
+// const handsSpan1 = hands.querySelector(".span-all-hidden");
+// const handsSpan2 = hands.querySelector(".span-vb");
+// const handsBtnOne = hands.querySelector(".all-item-table-bot-btn-one");
+// const handsBtnTwo = hands.querySelector(".all-item-table-bot-btn-two");
+// const handsBtnThree = hands.querySelector(".all-item-table-bot-btn-three");
+// const handstbodyOne = hands.querySelector(".tbody-one");
 let counter4 = 0;
 const legs = document.querySelector(".legs");
-const legsSpan1 = legs.querySelector(".span-all-hidden");
-const legsSpan2 = legs.querySelector(".span-vb");
-const legsBtnOne = legs.querySelector(".all-item-table-bot-btn-one");
-const legsBtnTwo = legs.querySelector(".all-item-table-bot-btn-two");
-const legsBtnThree = legs.querySelector(".all-item-table-bot-btn-three");
-const legstbodyOne = legs.querySelector(".tbody-one");
+const allItemTableBot = document.querySelector(".all-item-table-bot");
+const allsBtnsTwo = document.querySelector(".alls-btns-two");
+// const legsSpan1 = legs.querySelector(".span-all-hidden");
+// const legsSpan2 = legs.querySelector(".span-vb");
+// const legsBtnOne = legs.querySelector(".all-item-table-bot-btn-one");
+// const legsBtnTwo = legs.querySelector(".all-item-table-bot-btn-two");
+// const legsBtnThree = legs.querySelector(".all-item-table-bot-btn-three");
+// const legstbodyOne = legs.querySelector(".tbody-one");
 
 let counter5 = 0;
 AllBtn.forEach((btn) => {
@@ -186,6 +172,7 @@ AllBtn.forEach((btn) => {
       izi(tbodyOne);
       hoverZamt();
       hoverKira();
+      allItemTableBot.classList.add("ssssss");
     }
     if (btn.dataset.zet == "two") {
       faceSpan1.classList.remove("span-all-hidden-hid");
@@ -200,6 +187,7 @@ AllBtn.forEach((btn) => {
       izi(facetbodyOne);
       hoverZamt();
       hoverKira();
+      allsBtnsTwo.classList.add("ssssss");
     }
     if (btn.dataset.zet == "three") {
       bodysSpan1.classList.remove("span-all-hidden-hid");
@@ -279,6 +267,7 @@ btnOne.addEventListener("click", () => {
   const galka = document.querySelector(".galka");
   const edit2 = document.querySelector(".edit-2");
   const galka2 = document.querySelector(".galka-2");
+  allItemTableBot.classList.remove("ssssss");
 
   trOneBotAll.forEach((bot) => {
     bot.classList.remove("tr-one-bot--active");
@@ -304,6 +293,7 @@ faceBtnOne.addEventListener("click", () => {
   checkboxNone2.classList.remove("chekBox-none--active");
   imgNone2.classList.remove("img-none--active");
   const trOneBotAll = document.querySelectorAll(".tr-one-bot-all");
+  allsBtnsTwo.classList.remove("ssssss");
 
   trOneBotAll.forEach((bot) => {
     bot.classList.remove("tr-one-bot--active");
@@ -317,72 +307,72 @@ faceBtnOne.addEventListener("click", () => {
   galka.style.display = "none";
   galka2.style.display = "none";
 });
-bodysBtnOne.addEventListener("click", () => {
-  bodysSpan1.classList.add("span-all-hidden-hid");
-  bodysSpan2.classList.add("span-all-hidden-hid");
-  bodysBtnOne.classList.add("btn-none");
-  bodysBtnTwo.classList.add("btn-none");
-  bodysBtnThree.classList.add("btn-none");
-  checkboxNone3.classList.remove("chekBox-none--active");
-  imgNone3.classList.remove("img-none--active");
-  const trOneBotAll = document.querySelectorAll(".tr-one-bot-all");
+// bodysBtnOne.addEventListener("click", () => {
+//   bodysSpan1.classList.add("span-all-hidden-hid");
+//   bodysSpan2.classList.add("span-all-hidden-hid");
+//   bodysBtnOne.classList.add("btn-none");
+//   bodysBtnTwo.classList.add("btn-none");
+//   bodysBtnThree.classList.add("btn-none");
+//   checkboxNone3.classList.remove("chekBox-none--active");
+//   imgNone3.classList.remove("img-none--active");
+//   const trOneBotAll = document.querySelectorAll(".tr-one-bot-all");
 
-  trOneBotAll.forEach((bot) => {
-    bot.classList.remove("tr-one-bot--active");
-  });
-  const edit1 = document.querySelector(".edit-1");
-  const galka = document.querySelector(".galka");
-  const edit2 = document.querySelector(".edit-2");
-  const galka2 = document.querySelector(".galka-2");
-  edit1.style.display = "";
-  edit2.style.display = "";
-  galka.style.display = "none";
-  galka2.style.display = "none";
-});
-handsBtnOne.addEventListener("click", () => {
-  handsSpan1.classList.add("span-all-hidden-hid");
-  handsSpan2.classList.add("span-all-hidden-hid");
-  handsBtnOne.classList.add("btn-none");
-  handsBtnTwo.classList.add("btn-none");
-  handsBtnThree.classList.add("btn-none");
-  checkboxNone4.classList.remove("chekBox-none--active");
-  imgNone4.classList.remove("img-none--active");
-  const trOneBotAll = document.querySelectorAll(".tr-one-bot-all");
+//   trOneBotAll.forEach((bot) => {
+//     bot.classList.remove("tr-one-bot--active");
+//   });
+//   const edit1 = document.querySelector(".edit-1");
+//   const galka = document.querySelector(".galka");
+//   const edit2 = document.querySelector(".edit-2");
+//   const galka2 = document.querySelector(".galka-2");
+//   edit1.style.display = "";
+//   edit2.style.display = "";
+//   galka.style.display = "none";
+//   galka2.style.display = "none";
+// });
+// handsBtnOne.addEventListener("click", () => {
+//   handsSpan1.classList.add("span-all-hidden-hid");
+//   handsSpan2.classList.add("span-all-hidden-hid");
+//   handsBtnOne.classList.add("btn-none");
+//   handsBtnTwo.classList.add("btn-none");
+//   handsBtnThree.classList.add("btn-none");
+//   checkboxNone4.classList.remove("chekBox-none--active");
+//   imgNone4.classList.remove("img-none--active");
+//   const trOneBotAll = document.querySelectorAll(".tr-one-bot-all");
 
-  trOneBotAll.forEach((bot) => {
-    bot.classList.remove("tr-one-bot--active");
-  });
-  const edit1 = document.querySelector(".edit-1");
-  const galka = document.querySelector(".galka");
-  const edit2 = document.querySelector(".edit-2");
-  const galka2 = document.querySelector(".galka-2");
-  edit1.style.display = "";
-  edit2.style.display = "";
-  galka.style.display = "none";
-  galka2.style.display = "none";
-});
-legsBtnOne.addEventListener("click", () => {
-  legsSpan1.classList.add("span-all-hidden-hid");
-  legsSpan2.classList.add("span-all-hidden-hid");
-  legsBtnOne.classList.add("btn-none");
-  legsBtnTwo.classList.add("btn-none");
-  legsBtnThree.classList.add("btn-none");
-  checkboxNone5.classList.remove("chekBox-none--active");
-  imgNone5.classList.remove("img-none--active");
-  const trOneBotAll = document.querySelectorAll(".tr-one-bot-all");
+//   trOneBotAll.forEach((bot) => {
+//     bot.classList.remove("tr-one-bot--active");
+//   });
+//   const edit1 = document.querySelector(".edit-1");
+//   const galka = document.querySelector(".galka");
+//   const edit2 = document.querySelector(".edit-2");
+//   const galka2 = document.querySelector(".galka-2");
+//   edit1.style.display = "";
+//   edit2.style.display = "";
+//   galka.style.display = "none";
+//   galka2.style.display = "none";
+// });
+// legsBtnOne.addEventListener("click", () => {
+//   legsSpan1.classList.add("span-all-hidden-hid");
+//   legsSpan2.classList.add("span-all-hidden-hid");
+//   legsBtnOne.classList.add("btn-none");
+//   legsBtnTwo.classList.add("btn-none");
+//   legsBtnThree.classList.add("btn-none");
+//   checkboxNone5.classList.remove("chekBox-none--active");
+//   imgNone5.classList.remove("img-none--active");
+//   const trOneBotAll = document.querySelectorAll(".tr-one-bot-all");
 
-  trOneBotAll.forEach((bot) => {
-    bot.classList.remove("tr-one-bot--active");
-  });
-  const edit1 = document.querySelector(".edit-1");
-  const galka = document.querySelector(".galka");
-  const edit2 = document.querySelector(".edit-2");
-  const galka2 = document.querySelector(".galka-2");
-  edit1.style.display = "";
-  edit2.style.display = "";
-  galka.style.display = "none";
-  galka2.style.display = "none";
-});
+//   trOneBotAll.forEach((bot) => {
+//     bot.classList.remove("tr-one-bot--active");
+//   });
+//   const edit1 = document.querySelector(".edit-1");
+//   const galka = document.querySelector(".galka");
+//   const edit2 = document.querySelector(".edit-2");
+//   const galka2 = document.querySelector(".galka-2");
+//   edit1.style.display = "";
+//   edit2.style.display = "";
+//   galka.style.display = "none";
+//   galka2.style.display = "none";
+// });
 
 window.addEventListener("click", (event) => {
   let user = 1;
@@ -445,18 +435,18 @@ const modal = document.querySelector(".modal");
 const body = document.body;
 const close = document.querySelector(".Close");
 settingOne.onclick = function () {
-  menuRigth.style.display = "none";
+  // menuRigth.style.display = "none";
   menuTextNone.forEach((text) => {
     text.classList.add("text-none");
   });
   brMenu.classList.remove("br-menu--active");
-  dash.classList.remove("dash--active");
-  vector.forEach((v) => {
-    v.classList.remove("vector-white");
-  });
-  vector2.forEach((v2) => {
-    v2.classList.toggle("vector-2--active");
-  });
+  // dash.classList.remove("dash--active");
+  // vector.forEach((v) => {
+  //   v.classList.remove("vector-white");
+  // });
+  // vector2.forEach((v2) => {
+  //   v2.classList.toggle("vector-2--active");
+  // });
   modal.classList.toggle("modal-none");
   body.classList.toggle("grey");
 };
@@ -466,6 +456,9 @@ close.onclick = function () {
     v2.classList.remove("vector-2--active");
   });
   body.classList.remove("grey");
+  menuTextNone.forEach((text) => {
+    text.classList.remove("text-none");
+  });
 };
 
 // MOBIL
@@ -494,6 +487,7 @@ const allBTNOtm = document.querySelector(".all-price-item-mid-btn-otm");
 const allBTNOtm2 = document.querySelector(".all-price-item-mid-btn-otm2");
 const allMid = document.querySelector(".all-price-item-mid");
 const allMid2 = document.querySelector(".all-price-item-mid-2");
+const bkue = document.querySelector(".blue");
 const allpriceDropLast = document.querySelector(
   ".all-price-item-drop-all-last"
 );
@@ -504,6 +498,7 @@ const allpriceDropLast2 = document.querySelector(
 burgerPriceClick.onclick = () => {
   burgerPriceClick.classList.toggle("all-active");
   burgerPriceList.classList.toggle("list-active");
+  bkue.classList.toggle("blue-acctive");
 };
 
 allPriceItemDrop.forEach((allDropItem) => {
@@ -517,7 +512,7 @@ allPriceItemDrop.forEach((allDropItem) => {
   };
 });
 allBTN.onclick = () => {
-  if (allBTN.textContent == "Раскрыть") {
+  if (allBTN.textContent == "Развернуть") {
     allPriceItemDrop.forEach((allDropItems) => {
       allDropItems.classList.add("all-price-item-drop--active");
     });
@@ -527,7 +522,7 @@ allBTN.onclick = () => {
     allPriceItemDropImg.forEach((img) => {
       img.classList.add("allPriceItemDropImg--active");
     });
-    allBTN.textContent = "Скрыть";
+    allBTN.textContent = "Свернуть";
   } else {
     allPriceItemDrop.forEach((allDropItems) => {
       allDropItems.classList.remove("all-price-item-drop--active");
@@ -538,7 +533,7 @@ allBTN.onclick = () => {
     allPriceItemDropImg.forEach((img) => {
       img.classList.remove("allPriceItemDropImg--active");
     });
-    allBTN.textContent = "Раскрыть";
+    allBTN.textContent = "Развернуть";
   }
 };
 btnAllAdd.onclick = () => {
