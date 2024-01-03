@@ -35,17 +35,17 @@ menuItems.forEach((item) => {
       });
       cash.classList.remove("cash--active");
       vectorHome.classList.remove("vector-home-white");
-      menuRigth.style.display = "";
+      // menuRigth.style.display = "";
 
-      brMenu.classList.toggle("br-menu--active");
+      // brMenu.classList.toggle("br-menu--active");
 
-      menuRigth.classList.toggle("menu-rigth--active");
-      menuTextNone.forEach((text) => {
-        text.classList.toggle("text-none");
-      });
-      menuRightLinks.forEach((link) => {
-        link.classList.toggle("menu-right-link--active");
-      });
+      // menuRigth.classList.toggle("menu-rigth--active");
+      // menuTextNone.forEach((text) => {
+      //   text.classList.toggle("text-none");
+      // });
+      // menuRightLinks.forEach((link) => {
+      //   link.classList.toggle("menu-right-link--active");
+      // });
     } else if (item.dataset.fer == "two") {
       cash.classList.add("cash--active");
       vectorHome.classList.add("vector-home-white");
@@ -53,43 +53,8 @@ menuItems.forEach((item) => {
   });
 });
 
-Svernyt.addEventListener("click", () => {
-  menuRightLinks.forEach((link) => {
-    link.classList.remove("menu-right-link--active");
-  });
-  menuTextNone.forEach((text) => {
-    text.classList.add("text-none");
-  });
-  menuRigth.classList.add("menu-rigth-none");
-  dash.classList.remove("dash--active");
-  vector.forEach((v) => {
-    v.classList.remove("vector-white");
-  });
-
-  brMenu.classList.remove("br-menu--active");
-});
-
 const brMenu = document.querySelector(".br-menu");
 
-cp.addEventListener("click", () => {
-  brMenu.classList.add("br-menu--active");
-  menuRightLinks.forEach((link) => {
-    link.classList.remove("menu-right-link--active");
-  });
-  menuTextNone.forEach((text) => {
-    text.classList.remove("text-none");
-  });
-  vector.forEach((v) => {
-    v.classList.remove("vector-white");
-  });
-  vector2.forEach((v2) => {
-    v2.classList.remove("vector-2--active");
-  });
-  menuRigth.classList.remove("menu-rigth-none");
-  menuRigth.classList.remove("menu-rigth--active");
-  dash.classList.remove("dash--active");
-  menuRigth.style.display = "";
-});
 cash.addEventListener("click", () => {
   brMenu.classList.add("br-menu--active");
   menuRightLinks.forEach((link) => {
@@ -104,10 +69,10 @@ cash.addEventListener("click", () => {
   vector2.forEach((v2) => {
     v2.classList.remove("vector-2--active");
   });
-  menuRigth.classList.remove("menu-rigth-none");
-  menuRigth.classList.remove("menu-rigth--active");
+  // menuRigth.classList.remove("menu-rigth-none");
+  // menuRigth.classList.remove("menu-rigth--active");
   dash.classList.remove("dash--active");
-  menuRigth.style.display = "";
+  // menuRigth.style.display = "";
 });
 window.addEventListener("click", (event) => {
   let user = 1;
@@ -138,23 +103,26 @@ const modal = document.querySelector(".modal");
 const body = document.body;
 const close = document.querySelector(".Close");
 settingOne.onclick = function () {
-  menuRigth.style.display = "none";
+  // menuRigth.style.display = "none";
   menuTextNone.forEach((text) => {
-    text.classList.add("text-none");
+    text.classList.toggle("text-none");
   });
   brMenu.classList.remove("br-menu--active");
-  dash.classList.remove("dash--active");
-  vector.forEach((v) => {
-    v.classList.remove("vector-white");
-  });
-  vector2.forEach((v2) => {
-    v2.classList.toggle("vector-2--active");
-  });
+  // dash.classList.remove("dash--active");
+  // vector.forEach((v) => {
+  //   v.classList.remove("vector-white");
+  // });
+  // vector2.forEach((v2) => {
+  //   v2.classList.toggle("vector-2--active");
+  // });
   modal.classList.toggle("modal-none");
   body.classList.toggle("grey");
 };
 close.onclick = function () {
   modal.classList.add("modal-none");
+  menuTextNone.forEach((text) => {
+    text.classList.remove("text-none");
+  });
   vector2.forEach((v2) => {
     v2.classList.remove("vector-2--active");
   });
@@ -182,18 +150,3 @@ burgerMenuDrop.onclick = () => {
   burgerMenuDrop.classList.toggle("burgerMenuDrop--active");
   burgerMenuS.classList.toggle("burgerMenuS--none");
 };
-
-// footerMenuItem.forEach((fitem) => {
-//   fitem.addEventListener("click", (e) => {
-//     if (e.currentTarget.dataset.name == "glav") {
-//       const child = fitem.children[0];
-//       const child2 = child.children[0];
-//       child2.classList.toggle("black");
-//     }
-//     if (e.currentTarget.dataset.name == "Management") {
-//       const child = fitem.children[0];
-//       const child2 = child.children[0];
-//       child2.classList.toggle("black");
-//     }
-//   });
-// });
